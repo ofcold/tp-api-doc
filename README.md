@@ -424,3 +424,171 @@ password:Admin123 [require|min:8|max:20]
 - Paramters
 ```
 phone_number:18898726543 [require|unique|china phone number]
+```
+
+# Task
+
+## Tasks (任务列表)
+- Path: /api/tasks
+- Method: Get
+- Paramters
+```
+q: [string|search text]
+task_type: [jd|wechat_comment|tiktok|taobao|all]
+order_by: [string|(field)[tiitle]]
+```
+
+- Result
+```
+{
+    "current_page": 1,
+    "data": [
+        {
+            "id": 2,
+            "task_type": "wechat_comment",
+            "title": "微信朋友圈",
+            "claim": "要求用户下载的图片或给用户看的示例图",
+            "url": "https://tp.com/tasks/create",
+            "amount": "8.0000",
+            "inventory": 2000,
+            "compose": "<h1 jstcache=\"0\" style=\"color: var(--heading-color); font-size: 1.6em; font-weight: normal; line-height: 1.25em; margin-bottom: 16px; overflow-wrap: break-word; font-family: system-ui, sans-serif;\"><span jsselect=\"heading\" jsvalues=\".innerHTML:msg\" jstcache=\"10\">This site can’t be reached</span></h1><p jsselect=\"summary\" jsvalues=\".innerHTML:msg\" jstcache=\"2\" style=\"display: inline; color: rgb(95, 99, 104); font-family: system-ui, sans-serif; font-size: 15px;\"><strong jscontent=\"hostName\" jstcache=\"23\" style=\"overflow-wrap: break-word;\">www.android.com</strong>&nbsp;took too long to respond.</p><span style=\"color: rgb(95, 99, 104); font-family: system-ui, sans-serif; font-size: 15px;\"></span><div id=\"error-information-popup-container\" jstcache=\"0\" style=\"color: rgb(95, 99, 104); font-family: system-ui, sans-serif; font-size: 15px;\"><div id=\"error-information-popup\" jstcache=\"0\"><div id=\"error-information-popup-box\" jstcache=\"0\"><div id=\"error-information-popup-content\" jstcache=\"0\"><div id=\"suggestions-list\" jsdisplay=\"(suggestionsSummaryList &amp;&amp; suggestionsSummaryList.length)\" jstcache=\"17\"><p jsvalues=\".innerHTML:suggestionsSummaryListHeader\" jstcache=\"19\" style=\"margin-block-end: 0px;\">Try:</p><ul jsvalues=\".className:suggestionsSummaryList.length == 1 ? 'single-suggestion' : ''\" jstcache=\"20\" class=\"\"><li jsselect=\"suggestionsSummaryList\" jsvalues=\".innerHTML:summary\" jstcache=\"22\" jsinstance=\"0\">Checking the connection</li><li jsselect=\"suggestionsSummaryList\" jsvalues=\".innerHTML:summary\" jstcache=\"22\" jsinstance=\"*1\"><a href=\"chrome-error://chromewebdata/#buttons\" jstcache=\"0\" style=\"text-decoration: none;\">Checking the proxy and the firewall</a></li></ul></div><div class=\"error-code\" jscontent=\"errorCode\" jstcache=\"18\" style=\"color: var(--error-code-color); font-size: 0.8em; text-transform: uppercase; margin-top: 12px;\">ERR_CONNECTION_TIMED_OUT</div></div></div></div></div>",
+            "tags": [
+                "a",
+                "b",
+                "c"
+            ],
+            "images": [
+                {
+                    "ext": "jpg",
+                    "disk": "qiniu",
+                    "path": "task-images/VC2kdNZwth1m317DTY7rLNBYDryqluLMee7EjaLz.jpg",
+                    "uuid": "VC2kdNZwth1m317DTY7rLNBYDryqluLMee7EjaLz",
+                    "zise": 1134596,
+                    "mime_type": "image/jpeg"
+                },
+                {
+                    "ext": "jpg",
+                    "disk": "qiniu",
+                    "path": "task-images/l6ADjH7KNo3PNi6Vu23sSqFE3XNya0u1Dqg9gMnJ.jpg",
+                    "uuid": "l6ADjH7KNo3PNi6Vu23sSqFE3XNya0u1Dqg9gMnJ",
+                    "zise": 1263529,
+                    "mime_type": "image/jpeg"
+                }
+            ],
+            "status": "release",
+            "release_at": "2021-01-10 18:49:21",
+            "storage_type": "qiniu",
+            "created_at": "2021-01-10 10:49:21",
+            "updated_at": "2021-01-10 10:49:21",
+            "image_host": "http://qm6tgfk67.hn-bkt.clouddn.com/",
+            "task_type_name": {
+                "name": "微信朋友圈",
+                "slug": "wechat_comment",
+                "icon": "wechat_comment"
+            }
+        },
+        {
+            "id": 1,
+            "task_type": "wechat_comment",
+            "title": "微信朋友圈",
+            "claim": "要求用户下载的图片或给用户看的示例图",
+            "url": "https://tp.com/tasks/create",
+            "amount": "8.0000",
+            "inventory": 2000,
+            "compose": "<h1 jstcache=\"0\" style=\"color: var(--heading-color); font-size: 1.6em; font-weight: normal; line-height: 1.25em; margin-bottom: 16px; overflow-wrap: break-word; font-family: system-ui, sans-serif;\"><span jsselect=\"heading\" jsvalues=\".innerHTML:msg\" jstcache=\"10\">This site can’t be reached</span></h1><p jsselect=\"summary\" jsvalues=\".innerHTML:msg\" jstcache=\"2\" style=\"display: inline; color: rgb(95, 99, 104); font-family: system-ui, sans-serif; font-size: 15px;\"><strong jscontent=\"hostName\" jstcache=\"23\" style=\"overflow-wrap: break-word;\">www.android.com</strong>&nbsp;took too long to respond.</p><span style=\"color: rgb(95, 99, 104); font-family: system-ui, sans-serif; font-size: 15px;\"></span><div id=\"error-information-popup-container\" jstcache=\"0\" style=\"color: rgb(95, 99, 104); font-family: system-ui, sans-serif; font-size: 15px;\"><div id=\"error-information-popup\" jstcache=\"0\"><div id=\"error-information-popup-box\" jstcache=\"0\"><div id=\"error-information-popup-content\" jstcache=\"0\"><div id=\"suggestions-list\" jsdisplay=\"(suggestionsSummaryList &amp;&amp; suggestionsSummaryList.length)\" jstcache=\"17\"><p jsvalues=\".innerHTML:suggestionsSummaryListHeader\" jstcache=\"19\" style=\"margin-block-end: 0px;\">Try:</p><ul jsvalues=\".className:suggestionsSummaryList.length == 1 ? 'single-suggestion' : ''\" jstcache=\"20\" class=\"\"><li jsselect=\"suggestionsSummaryList\" jsvalues=\".innerHTML:summary\" jstcache=\"22\" jsinstance=\"0\">Checking the connection</li><li jsselect=\"suggestionsSummaryList\" jsvalues=\".innerHTML:summary\" jstcache=\"22\" jsinstance=\"*1\"><a href=\"chrome-error://chromewebdata/#buttons\" jstcache=\"0\" style=\"text-decoration: none;\">Checking the proxy and the firewall</a></li></ul></div><div class=\"error-code\" jscontent=\"errorCode\" jstcache=\"18\" style=\"color: var(--error-code-color); font-size: 0.8em; text-transform: uppercase; margin-top: 12px;\">ERR_CONNECTION_TIMED_OUT</div></div></div></div></div>",
+            "tags": [],
+            "images": [
+                {
+                    "ext": "jpg",
+                    "disk": "qiniu",
+                    "path": "task-images/VC2kdNZwth1m317DTY7rLNBYDryqluLMee7EjaLz.jpg",
+                    "uuid": "VC2kdNZwth1m317DTY7rLNBYDryqluLMee7EjaLz",
+                    "zise": 1134596,
+                    "mime_type": "image/jpeg"
+                },
+                {
+                    "ext": "jpg",
+                    "disk": "qiniu",
+                    "path": "task-images/l6ADjH7KNo3PNi6Vu23sSqFE3XNya0u1Dqg9gMnJ.jpg",
+                    "uuid": "l6ADjH7KNo3PNi6Vu23sSqFE3XNya0u1Dqg9gMnJ",
+                    "zise": 1263529,
+                    "mime_type": "image/jpeg"
+                }
+            ],
+            "status": "release",
+            "release_at": "2021-01-10 14:37:06",
+            "storage_type": "qiniu",
+            "created_at": "2021-01-10 06:37:06",
+            "updated_at": "2021-01-10 06:37:06",
+            "image_host": "http://qm6tgfk67.hn-bkt.clouddn.com/",
+            "task_type_name": {
+                "name": "微信朋友圈",
+                "slug": "wechat_comment",
+                "icon": "wechat_comment"
+            }
+        }
+    ],
+    "first_page_url": "https://tp.com/api/tasks?page=1",
+    "from": 1,
+    "last_page": 1,
+    "last_page_url": "https://tp.com/api/tasks?page=1",
+    "links": [
+        {
+            "url": null,
+            "label": "&laquo; Previous",
+            "active": false
+        },
+        {
+            "url": "https://tp.com/api/tasks?page=1",
+            "label": 1,
+            "active": true
+        },
+        {
+            "url": null,
+            "label": "Next &raquo;",
+            "active": false
+        }
+    ],
+    "next_page_url": null,
+    "path": "https://tp.com/api/tasks",
+    "per_page": 15,
+    "prev_page_url": null,
+    "to": 2,
+    "total": 2
+}
+```
+
+## Task Type (任务类型)
+- Path: /api/task-types
+- Method: Get
+- Paramters
+- Result
+```
+[
+    {
+        "name": "全部",
+        "slug": "all",
+        "icon": "all"
+    },
+    {
+        "name": "京东",
+        "slug": "jd",
+        "icon": "jd"
+    },
+    {
+        "name": "微信朋友圈",
+        "slug": "wechat_comment",
+        "icon": "wechat_comment"
+    },
+    {
+        "name": "抖音",
+        "slug": "tiktok",
+        "icon": "tiktok"
+    },
+    {
+        "name": "淘宝",
+        "slug": "taobao",
+        "icon": "taobao"
+    }
+]
+```
