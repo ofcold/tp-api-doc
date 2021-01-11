@@ -1,6 +1,8 @@
 # Common Header
+```
 - X-Requested-With: XMLHttpRequest [string]
 - Authorization: You login token (Example: Bearer 8|8AL1mwqbE5n3QNLMGSnjWlfWcBSXMee4uVieSPnt) [string]
+```
 
 ## Register
 - Path: /api/register
@@ -47,6 +49,15 @@ validate_code:114751 [require|must length:6]
 - Paramters
 ```
 phone_number:18898726543 [require|china phone number]
+```
+
+## Login/Log Up (登入)
+- Path: /api/login
+- Mehtod: POST
+- Paramters:
+```
+phone_number:18898726543 [require|unique|china phone number]
+password:Admin123 [require|min:8|max:20]
 ```
 
 ## Password reset (密码重设)
