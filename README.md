@@ -6,4 +6,9 @@
 - Host: http://tikplus.cn:9200/
 
 
-
+- [登入登出](LOGIN.md)
+- [注册](REGSITER.md)
+- [用户](USER.md)
+- [用户密码](USER-PASSWORD.md)
+- [VIP](VIP.md)
+- [任务](TASK.md)

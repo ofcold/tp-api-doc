@@ -14,4 +14,5 @@ phone_number:18898726543 [require|exists|china phone number]
 ```
 phone_number:18898726543 [require|exists|china phone number]
 password:18898726543 [require|exists|china phone number]
+validate_code:18898726543 [require|exists|china phone number]
 ```
