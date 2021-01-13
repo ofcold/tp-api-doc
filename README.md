@@ -7,7 +7,7 @@
 
 
 - [登入登出](LOGIN.md)
-- [注册](REGSITER.md)
+- [注册](REGISTER.md)
 - [用户](USER.md)
 - [用户密码](USER-PASSWORD.md)
 - [VIP](VIP.md)
