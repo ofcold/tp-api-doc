@@ -13,6 +13,7 @@ phone_number:18898726543 [require|exists|china phone number]
 - Paramters
 ```
 phone_number:18898726543 [require|exists|china phone number]
-password:18898726543 [require|exists|china phone number]
+password:password [string]
+password_confirmation:password [string]
 validate_code:18898726543 [require|exists|china phone number]
 ```
